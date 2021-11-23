@@ -4,8 +4,8 @@ package online.rvcode.jwtjava;
 public class JWTGenerator {
     public static void main(String[] args) {
         String header = "\"alg\": \"HS256\"";
-        
-        String payload = "{ \"rvcode:nome\": \"Zezim\", \"rvcode:admin\": true }";
+               
+        String payload = "{ \"rvcode:nome\": \"Be\", \"rvcode:nome\": \"Rubens️\", \"rvcode:admin\": true }";
         
         String encodeData = Base64Url.encode(header) + "." + Base64Url.encode(payload);
         
@@ -15,6 +15,6 @@ public class JWTGenerator {
         
         String jwt = encodeData + "." + signature;
         
-        System.out.println(encodeData);
+        System.out.println(jwt);
     }
 }
